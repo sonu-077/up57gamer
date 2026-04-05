@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite BGMI Showdown | Tournament Portal</title>
+    <meta name="description"
+        content="Join the ultimate BGMI Tournament. Win huge prizes, compete with the best, and prove your skills.">
+    <!-- Google Fonts for modern typography -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Rajdhani:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header class="header blur-glass">
+        <div class="logo">
+            <i class="fa-solid fa-gamepad"></i> <span>UP-57</span> Gamer
+        </div>
+        <nav class="nav">
+            <a href="#hero">Home</a>
+            <a href="#rules">Rules</a>
+            <a href="#prizes">Prize Pool</a>
+            <a href="#payment">Register</a>
+        </nav>
+    </header>
+
+    <!-- Floating Support Buttons -->
+    <div class="support-float">
+        <a href="https://whatsapp.com/channel/0029VbCJZ34JuyA8QL2eGa0Z" target="_blank" class="float-btn wapp"
+            aria-label="WhatsApp Support">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <!-- Tournament Banner Image Slider -->
+        <div class="hero-slider">
+            <div class="slide active" style="background-image: url('bgmi_banner.png');"></div>
+            <div class="slide" style="background-image: url('erangel_4v4.png');"></div>
+            <div class="slide" style="background-image: url('erangel_2v2.png');"></div>
+            <div class="slide" style="background-image: url('arena_4v4.png');"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="glitch" data-text="SEASON 1 CHAMPIONSHIP">SEASON 1 CHAMPIONSHIP</h1>
+            <p class="subtitle">Drop in, Gear up, Take them down. The ultimate battle royale experience.</p>
+
+
+
+            <a href="#payment" class="btn-primary">Register & Pay Now <i class="fa-solid fa-arrow-right"></i></a>
+            <h3 class="prize-highlight">WIN UP TO ₹10,000</h3>
+        </div>
+    </section>
+
+    <!-- Tournaments Section -->
+    <section id="tournaments" class="tournaments section-container">
+        <h2 class="section-title">Up-coming <span class="text-neon">Tournaments</span></h2>
+
+        <!-- Countdown Timer -->
+        <div class="countdown-container blur-glass">
+            <h3 class="countdown-title">Next Tournament Starts In (<span
+                    style="color: #ef0101f6; text-shadow: 0 0 10px #ff66b2;">Sunday</span>)</h3>
+            <div id="countdown" class="countdown">
+                <div class="time-box"><span id="cd-days">00</span><small>Days</small></div>
+                <div class="time-box"><span id="cd-hours">00</span><small>Hours</small></div>
+                <div class="time-box"><span id="cd-minutes">00</span><small>Minutes</small></div>
+                <div class="time-box"><span id="cd-seconds">00</span><small>Seconds</small></div>
+            </div>
+        </div>
+
+        <div class="tournaments-grid">
+            <div class="tournament-card blur-glass glow-hover">
+                <img src="erangel_4v4.png" alt="Erangel 4v4" class="tournament-img">
+                <div class="tournament-info">
+                    <h3>Erangel 4v4</h3>
+                    <p>Classic Squad Battle Royale</p>
+                    <div class="fee">Fee: ₹50 / Squad</div>
+                    <div class="card-actions">
+                        <a href="#payment" class="btn-secondary">Pay Now</a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfuK11WmaGs_6S_Ol14y4fBlxqppHNQ6hTD1Hwg5wHIRhP9Yw/viewform?usp=publish-editor"
+                            target="_blank" class="btn-secondary register-btn">Register</a>
+                    </div>
+                </div>
+            </div>
+            <div class="tournament-card blur-glass glow-hover">
+                <img src="erangel_2v2.png" alt="Erangel 2v2" class="tournament-img">
+                <div class="tournament-info">
+                    <h3>Erangel 2v2</h3>
+                    <p>Tactical Duo Showdown</p>
+                    <div class="fee">Fee: ₹30 / Duo</div>
+                    <div class="card-actions">
+                        <a href="#payment" class="btn-secondary">Pay Now</a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdx_AwP5Ii9jR8L-b3qIDmFfJdZreLNnCUErc4F_WGX-FLLvA/viewform?usp=publish-editor"
+                            target="_blank" class="btn-secondary register-btn">Register</a>
+                    </div>
+                </div>
+            </div>
+            <div class="tournament-card blur-glass glow-hover">
+                <img src="erangel_solo.png" alt="Erangel Solo" class="tournament-img">
+                <div class="tournament-info">
+                    <h3>Erangel Solo</h3>
+                    <p>Lone Survivor Match</p>
+                    <div class="fee">Fee: ₹20 / Player</div>
+                    <div class="card-actions">
+                        <a href="#payment" class="btn-secondary">Pay Now</a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSehZpHVdH6XmO5PtpC9qTOW_FuuaELYSF12Yag1mr4sH9Salw/viewform?usp=publish-editor"
+                            target="_blank" class="btn-secondary register-btn">Register</a>
+                    </div>
+                </div>
+            </div>
+            <div class="tournament-card blur-glass glow-hover">
+                <img src="arena_4v4.png" alt="Arena 4v4" class="tournament-img">
+                <div class="tournament-info">
+                    <h3>Arena 4v4</h3>
+                    <p>Fast-pace Deathmatch</p>
+                    <div class="fee">Fee: ₹00 / Squad</div>
+                    <div class="card-actions">
+                        <a href="#payment" class="btn-secondary">Pay Now</a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScU8OVj1UkIvwb_kf8_rm1GbIlbH31XtIeOLV7WcRehacSl8Q/viewform?usp=dialog"
+                            target="_blank" class="btn-secondary register-btn">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rules Section -->
+    <section id="rules" class="rules section-container">
+        <h2 class="section-title">Tournament <span class="text-neon">Rules</span></h2>
+        <div class="rules-grid">
+            <div class="rule-card blur-glass glow-hover">
+                <div class="rule-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+                <h3>Device Restrictions</h3>
+                <p>Only mobile devices are allowed. Emulators are strictly prohibited. Strict anti-cheat in
+                    effect.</p>
+            </div>
+
+            <div class="rule-card blur-glass glow-hover">
+                <div class="rule-icon"><i class="fa-solid fa-clock"></i></div>
+                <h3>Punctuality</h3>
+                <p>Room ID & Password will be shared in WhatsApp group 15 minutes before start. Match will start exactly
+                    on time. No
+                    restart.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Prize Pool Section -->
+    <section id="prizes" class="prizes section-container">
+        <h2 class="section-title">Dynamic <span class="text-neon">Prize Pool</span></h2>
+        <p class="section-desc">Prizes scale based on the total collected entry pool. Enter a total collection to
+            calculate.</p>
+
+        <div class="calculator-container blur-glass">
+            <div class="input-group">
+                <label for="totalCollection">Total Collected Amount (₹):</label>
+                <div class="input-wrapper">
+                    <i class="fa-solid fa-indian-rupee-sign"></i>
+                    <input type="number" id="totalCollection" placeholder="e.g. 10000" min="0" class="form-control">
+                </div>
+            </div>
+
+            <div class="prize-distribution">
+                <div class="prize-card first-place glow-hover">
+                    <div class="medal"><i class="fa-solid fa-trophy"></i></div>
+                    <h3>1st Place</h3>
+                    <div class="percentage">60%</div>
+                    <div class="amount" id="firstPrize">₹0</div>
+                </div>
+
+                <div class="prize-card second-place glow-hover">
+                    <div class="medal"><i class="fa-solid fa-medal"></i></div>
+                    <h3>2nd Place</h3>
+                    <div class="percentage">25%</div>
+                    <div class="amount" id="secondPrize">₹0</div>
+                </div>
+            </div>
+            <p class="prize-note" id="prizeNote">*Remaining 15% goes to tournament management and platform fees.</p>
+        </div>
+    </section>
+
+    <!-- Payment Section -->
+    <section id="payment" class="payment section-container">
+        <h2 class="section-title">Register & <span class="text-neon">Pay</span></h2>
+        <div class="payment-wrapper flex-center">
+            <div class="payment-card blur-glass">
+                <div class="qr-container">
+                    <!-- Image tag updated by tool after generation -->
+                    <img id="qrImage" src="QR sk.jpeg" alt="UPI Scan Code" class="qr-code">
+                    <div class="scan-line"></div>
+                </div>
+                <div class="payment-info">
+                    <h3>Scan to Pay</h3>
+                    <p>Entry Fee: <strong>₹ Pay</strong></p>
+                    <p class="upi-id">
+                        UPI ID: <span id="upiText">8957426804@ybl</span>
+                        <button id="copyUpiBtn" class="copy-btn" title="Copy UPI ID"><i
+                                class="fa-regular fa-copy"></i></button>
+                    </p>
+                    <div class="payment-steps">
+                        <ol>
+                            <li>Scan the QR code above.</li>
+                            <li>Pay the entry fee securely.</li>
+                            <li>Take a screenshot of successful payment.</li>
+                            <li>Upload screenshot via Google Form to complete registration.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 UP-57 gamer team. All Rights Reserved.</p>
+        <p class="disclaimer">This tournament is not affiliated with or sponsored by KRAFTON, Inc.</p>
+    </footer>
+
+    <script src="dynamic.js"></script>
+</body>
+
+</html>
