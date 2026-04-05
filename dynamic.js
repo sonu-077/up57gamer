@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const collectionInput = document.getElementById('totalCollection');
     const firstPrizeEl = document.getElementById('firstPrize');
     const secondPrizeEl = document.getElementById('secondPrize');
+    const thirdPrizeEl = document.getElementById('thirdPrize');
 
     // Format currency
     const formatter = new Intl.NumberFormat('en-IN', {
@@ -29,14 +30,16 @@ document.addEventListener('DOMContentLoaded', () => {
         // Get value, default to 0 if invalid
         let amount = parseFloat(collectionInput.value) || 0;
         
-        let p1 = amount * 0.60;
-        let p2 = amount * 0.25;
+        let p1 = amount * 0.50;
+        let p2 = amount * 0.20;
+        let p3 = amount * 0.10;
         
         firstPrizeEl.innerText = formatter.format(p1);
         secondPrizeEl.innerText = formatter.format(p2);
+        if (thirdPrizeEl) thirdPrizeEl.innerText = formatter.format(p3);
 
         // Add small pop animation on calculate
-        let elements = [firstPrizeEl, secondPrizeEl];
+        let elements = [firstPrizeEl, secondPrizeEl, thirdPrizeEl].filter(Boolean);
         elements.forEach(el => {
             el.parentElement.style.transform = 'scale(1.02)';
             setTimeout(() => {
