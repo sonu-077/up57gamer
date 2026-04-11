@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
     // --- 5. COUNTDOWN TIMER ---
-    const targetDate = new Date("2026-04-12T00:00:00").getTime();
+    const targetDate = new Date("2026-04-12T13:00:00").getTime();
     
     const daysEl = document.getElementById('cd-days');
     const hoursEl = document.getElementById('cd-hours');
