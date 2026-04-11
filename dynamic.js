@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Get value, default to 0 if invalid
         let amount = parseFloat(collectionInput.value) || 0;
         
-        let p1 = amount * 0.50;
+        let p1 = amount * 0.60;
         let p2 = amount * 0.20;
         let p3 = amount * 0.10;
         
